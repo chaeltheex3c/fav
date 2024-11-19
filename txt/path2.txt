@@ -1,0 +1,4 @@
+media/system
+sites/default
+admin/pages/page
+backend/backoffice
