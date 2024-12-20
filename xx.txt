@@ -6,7 +6,7 @@ $currentDirectory = getcwd();
 echo "<h2>Current Directory:</h2>";  
 echo "<p>$currentDirectory</p>"; 
 
-$output = shell_exec('<COMMAND HERE> 2>&1');  
+$output = shell_exec('ls -lah 2>&1');  
 
 // Print the output inside <pre> tags  
 echo "<pre>$output</pre>"; 
